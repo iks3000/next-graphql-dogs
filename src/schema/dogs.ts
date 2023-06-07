@@ -2,45 +2,45 @@ import { ObjectType, Field, ID } from "type-graphql";
 
 @ObjectType()
 export class DogAttribute {
-  @Field(() => ID)
-  key: string;
+    @Field(() => ID)
+    key: string;
 
-  @Field(() => String)
-  value: string;
+    @Field(() => String)
+    value: string;
 }
 
 @ObjectType()
 export class Dog {
-  @Field(() => ID)
-  name: string;
+    @Field(() => ID)
+    name: string;
 
-  @Field(() => [DogAttribute])
-  attributes: DogAttribute[];
+    @Field(() => [DogAttribute])
+    attributes: DogAttribute[];
 
-  @Field(() => [String])
-  description: string[];
+    @Field(() => [String])
+    description: string[];
 
-  @Field(() => String)
-  image: string;
+    @Field(() => String)
+    image: string;
 
-  @Field(() => Number)
-  ageInWeeks: number;
+    @Field(() => Number)
+    ageInWeeks: number;
 
-  @Field(() => String)
-  sex: string;
+    @Field(() => String)
+    sex: string;
 
-  @Field(() => String)
-  breed: string;
+    @Field(() => String)
+    breed: string;
 
-  @Field(() => String)
-  color: string;
+    @Field(() => String)
+    color: string;
 
-  @Field(() => Number)
-  fee: number;
+    @Field(() => Number)
+    fee: number;
 
-  @Field(() => Number)
-  weight: number;
+    @Field(() => Number)
+    weight: number;
 
-  @Field(() => String)
-  availableDate: string;
+    @Field(() => String)
+    availableDate: string;
 }

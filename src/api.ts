@@ -7,11 +7,11 @@ const gqlClient = new GraphQLClient("https://next-graphql-dogs.netlify.app/api/g
 export const { getDogs, dogByName } = getSdk(gqlClient);
 
 export const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnMount: false,
-      refetchOnWindowFocus: false,
-      refetchOnReconnect: false,
+    defaultOptions: {
+        queries: {
+            refetchOnMount: false,
+            refetchOnWindowFocus: false,
+            refetchOnReconnect: false,
+        },
     },
-  },
 });
