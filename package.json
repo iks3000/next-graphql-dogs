@@ -17,6 +17,7 @@
         "@mantine/modals": "^6.0.13",
         "@mantine/next": "^6.0.13",
         "@mantine/notifications": "^6.0.13",
+        "@tabler/icons-react": "^2.22.0",
         "apollo-server-micro": "^3.6.7",
         "class-validator": "^0.13.2",
         "graphql": "^15.3.0",

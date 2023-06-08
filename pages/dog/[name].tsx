@@ -2,6 +2,7 @@ import React from "react";
 import { dehydrate, useQuery } from "react-query";
 import { Grid, Text, Title, Image } from "@mantine/core";
 import ModalWindow from "../../components/ModalWindow";
+import DialogWindow from "../../components/DialogWindow";
 
 import { queryClient, dogByName } from "../../src/api";
 

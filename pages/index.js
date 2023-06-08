@@ -21,7 +21,7 @@ export default function Home() {
         <div>
             <Grid>
                 {data?.dogs.map((f, i) => (
-                    <Grid.Col xs={12} md={6} lg={4} key={[f.name, i].join(":")} p={5}>
+                    <Grid.Col xs={12} md={6} lg={4} xl={3} key={[f.name, i].join(":")} p={5}>
                         <Link href={`/dog/${f.name}`} passHref>
                             <Card style={{ cursor: "pointer" }}>
                                 <Card.Section>
