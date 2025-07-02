@@ -18,6 +18,28 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## About Dog Images
+
+The application now uses the **Dog API** (https://dog.ceo/dog-api/) to display random, high-quality dog images. This API provides:
+
+- **Random dog images** - Each time you visit the page, you'll see different dog photos
+- **High-quality photos** - Professional dog photography from various breeds
+- **Reliable service** - Free, stable API with good uptime
+- **Fast loading** - Optimized images with proper caching
+
+**Previous solution:**
+
+- Initially used static images from `ohspets.shelterbuddy.com` which became unavailable
+- Replaced with Unsplash placeholder images (all showing the same dog)
+- Now uses dynamic Dog API for variety and reliability
+
+**Current implementation:**
+
+- Each dog gets a unique random image from Dog API
+- Fallback to Unsplash image if Dog API is unavailable
+- Error handling ensures images always display
+- Images are loaded dynamically on both main page and individual dog pages
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
